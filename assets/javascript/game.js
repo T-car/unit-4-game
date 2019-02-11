@@ -19,7 +19,7 @@ $('#losses').text(losses);
 $('#magicNumber').text(Random);
 $('#totalScore').text(playerTotal);
   
-  // choose new numbers for magic number and crystals, player score 0
+  // reset crystals, magic number and set player score to 0
   function reset(){
     Random=Math.floor(Math.random()*102+19);
     console.log(Random)
@@ -43,7 +43,7 @@ $('#totalScore').text(playerTotal);
     $('#losses').text(losses);
     reset()
   }
-  // on click functions for crystals
+  //  click functions for crystals
     $('#crystal1').on ('click', function(){
       playerTotal = playerTotal + num1;
       console.log("New playerTotal= " + playerTotal);
