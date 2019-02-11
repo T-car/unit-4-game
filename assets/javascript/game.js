@@ -18,7 +18,6 @@ $('#wins').text(wins);
 $('#losses').text(losses);
 $('#magicNumber').text(Random);
 $('#totalScore').text(playerTotal);
-$('#totalScore').text(playerTotal);
   
   // reset crystals, magic number and set player score to 0
   function reset(){
