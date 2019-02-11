@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cyrstal Collector Game</title>
+  <!-- Link to Bootstrap-->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--Link to CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Link to Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono" rel="stylesheet">
+    <!--Link to jquery-->
+    <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Header-->
+    <h1>Crystal Collector</h1>
+    <h3>Each crystal contains a hidden number.  Choose from each of the four crystals until Your Total matches the Magic Number.  If Your Total goes above the Magic Number you lose!</h3>
+    
+    <!--Main Container for Game-->
+    <div class = "mainContainer">
+
+     <div class="row" id="gameSection">
+
+        <!--Number from JS-->
+        <div class="col-md-6" id="randomrSection">
+            <h3>Magic Number:</h3>
+            <h1 id="magicNumber"></h1>
+        </div>
+
+        <!--Players total points-->
+        <div class="col-md-6" id="totalPoints">
+            <h3>Your Total:</h3>
+            <h1 id="totalScore"></h1>
+        </div>
+
+        </div>
+
+        <!--crystal image buttons-->
+        <div class="crystalButton"> 
+            <img class="crystals" id="crystal1" src="assets/images/icon-crystal-1.jpg">      
+            <img class="crystals" id="crystal2" src="assets/images/icon-crystal-2.jpg">
+            <img class="crystals" id="crystal3" src="assets/images/icon-crystal-3.jpg">
+            <img class="crystals" id="crystal4" src="assets/images/icon-crystal-4.jpg">
+        </div>
+
+        <!-- wins counter -->
+        <div class="col-md-12" id="winSection">
+            <h3>Wins: <span id ="wins"></span></h3>
+        </div>
+
+        <!-- loss counter -->
+        <div class="col-md-12" id="lossSection">
+            <h3>Losses: <span id ="losses"></span></h3>
+        </div>
+
+    </div>
+</body>
+<footer>
+    <!--Link to JS-->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</footer>
+</html>
